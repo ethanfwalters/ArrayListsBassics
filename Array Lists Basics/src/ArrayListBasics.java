@@ -71,7 +71,7 @@ public static void main(String[] args)
 			
 		}
 		
-		// challenge six
+		// challenge six 
 		
 		Double highestValue = Collections.max(myArray);
 		System.out.println(highestValue + " is the highest of the healthy people.");
