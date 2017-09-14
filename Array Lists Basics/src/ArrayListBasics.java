@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListBasics
 	{
@@ -54,7 +55,7 @@ public static void main(String[] args)
 		}
 		// challenge five
 		
-		for(int i = 0 ; i < myArray.size() ; i++){
+		for(int i = (myArray.size() - 1) ; i > -1 ; i--){
 			
 			if(myArray.get(i) > 98.6){
 				
@@ -69,7 +70,14 @@ public static void main(String[] args)
 			System.out.println(myArray.get(i));
 			
 		}
-			
+		
+		// challenge six
+		
+		Double highestValue = Collections.max(myArray);
+		System.out.println(highestValue + " is the highest of the healthy people.");
+		
+		Double lowestValue = Collections.min(myArray);
+		System.out.println(lowestValue + " is the lowest of the healthy people.");
 		
 	}
 	}
